@@ -1,0 +1,48 @@
+.qrcodes {
+  min-height: 100vh;
+  background: #111;
+
+  color: white;
+
+  padding: 40px;
+}
+
+.qrcodes h1 {
+  margin-bottom: 40px;
+}
+
+.qrcodes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 30px;
+}
+
+.card {
+  background: white;
+
+  color: black;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  font-family: monospace;
+
+  font-size: 18px;
+}

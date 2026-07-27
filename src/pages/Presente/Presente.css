@@ -1,0 +1,55 @@
+.final {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.final__content {
+  max-width: 420px;
+}
+
+.final__edition {
+  font-size: 12px;
+  letter-spacing: 4px;
+  opacity: 0.7;
+}
+
+.final h1 {
+  margin-top: 12px;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: #fff;
+  margin: 24px auto;
+  opacity: 0.3;
+}
+
+.final p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.final__message {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+.password {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 56px;
+  letter-spacing: 12px;
+  color: #ffffff;
+}
