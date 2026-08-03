@@ -16,24 +16,32 @@ function Chapter3() {
         <h2>
           ÀS VEZES,
           <br />
-          UMA BRINCADEIRA MUDA TUDO.
+          TUDO RECOMEÇA
+          <br />
+          SEM QUE A GENTE PERCEBA.
         </h2>
 
         <p className="story">
-          Sem planos.
+          A nossa história parecia
           <br />
-          Sem expectativa.
+          ter ficado no passado.
           <br />
-          Só duas pessoas
+          Até que, um dia, alguém
           <br />
-          que o tempo resolveu colocar
+          apareceu em um stories.
           <br />
-          no mesmo lugar outra vez.
+          E, de repente,
           <br />
-          E, dali em diante, nada foi por acaso.
+          nós voltamos a conversar.
           <br />
-          <br />A próxima resposta está em uma <br />
-          lembrança que você levou a sério demais.
+          <br />
+          A próxima resposta está
+          <br />
+          em uma lembrança
+          <br />
+          que eu escolhi
+          <br />
+          levar comigo para sempre.
         </p>
 
         <div className="footer">
