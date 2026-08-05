@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
@@ -6,8 +6,17 @@ function Home() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [visible, setVisible] = useState(false);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   function handleLogin(event) {
     event.preventDefault();
@@ -20,7 +29,7 @@ function Home() {
   }
 
   return (
-    <main className="home">
+    <main className={`home ${visible ? "show" : ""}`}>
       <img src="/images/eyes.png" alt="" className="home__image" />
 
       <section className="home__content">

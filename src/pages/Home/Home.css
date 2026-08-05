@@ -55,9 +55,9 @@
 
 .home__title {
   margin: 18px 0 8px;
-
-  font-size: 55px;
-  letter-spacing: 2px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
 }
 
 .home__text {
@@ -143,4 +143,18 @@
   font-weight: 600;
 
   cursor: pointer;
+}
+
+.home {
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.home.show {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -1,15 +1,27 @@
 import "./Intro.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Intro() {
   const navigate = useNavigate();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <main className="intro">
+    <main className={`intro ${visible ? "show" : ""}`}>
       <div className="intro__content">
         <span className="intro__edition">LIMITED EDITION</span>
 
-        <h1 className="intro__title">Capítulo 5</h1>
+        <h1 className="intro__title">CAPÍTULO 5</h1>
+
+        <div className="intro__line"></div>
 
         <p className="intro__text">
           ALGUMAS HISTÓRIAS
@@ -18,24 +30,22 @@ function Intro() {
           <br />
           SÃO DESCOBERTAS.
           <br />
-          VOCÊ ESTÁ PRESTES A EMBARCAR
           <br />
-          EM UM PEQUENO JOGO
+          VOCÊ ESTÁ PRESTES
           <br />
-          BASEADO NA NOSSA HISTÓRIA.
+          A EMBARCAR EM UM
           <br />
-          <br />O JOGO COMEÇA AGORA.
+          PEQUENO JOGO
           <br />
-          ALGUMAS COISAS FORAM <br />
-          DEIXADAS PELO CAMINHO.
+          BASEADO NA NOSSA
           <br />
-          NEM TUDO ESTÁ AQUI POR ACASO.
+          HISTÓRIA.
           <br />
-          ALGUMAS COISAS CARREGAM
           <br />
-          MAIS SIGNIFICADOS DO QUE
+          O JOGO COMEÇA AGORA
           <br />
-          PARECEM, PROCURE AS RESPOSTAS.
+          PROCURE O PRIMEIRO QR CODE.
+          <br />A HISTÓRIA ESPERA POR VOCÊ.
         </p>
 
         <button className="intro__button" onClick={() => navigate("/chapter1")}>

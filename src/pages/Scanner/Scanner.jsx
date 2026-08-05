@@ -1,19 +1,24 @@
 import "./Scanner.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
 
 function Scanner() {
   const navigate = useNavigate();
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => {
+      setVisible(true);
+    }, 150);
+
     const scanner = new Html5QrcodeScanner(
       "reader",
       {
         fps: 10,
         qrbox: {
-          width: 250,
-          height: 250,
+          width: 220,
+          height: 220,
         },
       },
       false,
@@ -30,8 +35,6 @@ function Scanner() {
 
     scanner.render(
       (decodedText) => {
-        console.log("QR lido:", decodedText);
-
         const route = routes[decodedText];
 
         if (route) {
@@ -40,9 +43,7 @@ function Scanner() {
           });
         }
       },
-      (error) => {
-        console.log(error);
-      },
+      () => {},
     );
 
     return () => {
@@ -51,8 +52,16 @@ function Scanner() {
   }, [navigate]);
 
   return (
-    <main className="scanner">
-      <div id="reader"></div>
+    <main className={`scanner ${visible ? "show" : ""}`}>
+      <section className="scanner__content">
+        <span className="scanner__edition">LIMITED EDITION</span>
+
+        <h1 className="scanner__title">LEITOR</h1>
+
+        <div className="scanner__line"></div>
+
+        <div id="reader"></div>
+      </section>
     </main>
   );
 }
