@@ -1,47 +1,54 @@
-import "./Final.css";
 import { useNavigate } from "react-router-dom";
+import ChapterLayout from "../../components/ChapterLayout/ChapterLayout";
 
-function Final() {
+export default function Final() {
   const navigate = useNavigate();
 
   return (
-    <div className="game">
-      <div className="background-number">5</div>
-
-      <div className="content">
-        <h1>Final</h1>
-
-        <div className="line"></div>
-
-        <h2>ANTES DO ÚLTIMO CAPÍTULO...</h2>
-
-        <p className="story">
+    <ChapterLayout
+      chapter="∞"
+      title="EPÍLOGO"
+      singleImage
+      subtitle={
+        <>
+          ANTES DO PRÓXIMO
+          <br />
+          CAPÍTULO...
+        </>
+      }
+      story={
+        <>
           Existe uma mulher
           <br />
           que mudou completamente a minha vida.
           <br />
-          Uma mulher que eu escolho amar <br />
-          todos os dias. <br />E toda vez que ela olhar
-          <br /> para um espelho, eu espero
-          <br /> que consiga enxergar <br />
+          Uma mulher que eu escolho amar
+          <br />
+          todos os dias.
+          <br />
+          <br />
+          E toda vez que ela olhar
+          <br />
+          para um espelho, eu espero
+          <br />
+          que consiga enxergar
+          <br />
           pelo menos um pouco do que eu enxergo nela.
           <br />
           <br />
           Olhe para ela onde seguimos viagem.
-        </p>
-
-        <div className="footer">
-          <p>
-            Quando encontrar a última pista,
-            <br />
-            escaneie o QR Code.
-          </p>
-
-          <button onClick={() => navigate("/scanner")}>ABRIR LEITOR</button>
-        </div>
-      </div>
-    </div>
+        </>
+      }
+      singleImage="/images/nos.png"
+      hint={
+        <>
+          Quando encontrar a resposta,
+          <br />
+          escaneie o QR Code.
+        </>
+      }
+      buttonText="ABRIR LEITOR"
+      onButtonClick={() => navigate("/scanner")}
+    />
   );
 }
-
-export default Final;

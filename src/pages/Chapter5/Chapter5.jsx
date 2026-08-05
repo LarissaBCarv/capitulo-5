@@ -1,25 +1,22 @@
-import "./Chapter5.css";
 import { useNavigate } from "react-router-dom";
+import ChapterLayout from "../../components/ChapterLayout/ChapterLayout";
 
-function Chapter5() {
+export default function Chapter5() {
   const navigate = useNavigate();
 
   return (
-    <div className="game">
-      <div className="background-number">5</div>
-
-      <div className="content">
-        <h1>Capítulo 5</h1>
-
-        <div className="line"></div>
-
-        <h2>
+    <ChapterLayout
+      chapter="5"
+      title="CAPÍTULO 5"
+      subtitle={
+        <>
           E, PELA PRIMEIRA VEZ,
           <br />
           NÃO ERA MAIS UM QUASE.
-        </h2>
-
-        <p className="story">
+        </>
+      }
+      story={
+        <>
           Você encerrou um capítulo.
           <br />
           Eu fiz uma escolha.
@@ -35,25 +32,26 @@ function Chapter5() {
           eu ainda escolheria fazer
           <br />
           o mesmo pedido.
-          <br />E esse capítulo ainda não acabou.
+          <br />
+          E esse capítulo ainda não acabou.
           <br />
           <br />
-          A próxima resposta está exatamente onde tudo mudou.
+          A próxima resposta está exatamente
           <br />
-        </p>
-
-        <div className="footer">
-          <p>
-            Quando encontrar a resposta,
-            <br />
-            escaneie o QR Code.
-          </p>
-
-          <button onClick={() => navigate("/scanner")}>ABRIR LEITOR</button>
-        </div>
-      </div>
-    </div>
+          onde tudo mudou.
+        </>
+      }
+      leftImage="/images/ana5.png"
+      rightImage="/images/larissa5.png"
+      hint={
+        <>
+          Quando encontrar a resposta,
+          <br />
+          escaneie o QR Code.
+        </>
+      }
+      buttonText="ABRIR LEITOR"
+      onButtonClick={() => navigate("/scanner")}
+    />
   );
 }
-
-export default Chapter5;

@@ -1,27 +1,24 @@
-import "./Chapter3.css";
 import { useNavigate } from "react-router-dom";
+import ChapterLayout from "../../components/ChapterLayout/ChapterLayout";
 
-function Chapter3() {
+export default function Chapter3() {
   const navigate = useNavigate();
 
   return (
-    <div className="game">
-      <div className="background-number">3</div>
-
-      <div className="content">
-        <h1>Capítulo 3</h1>
-
-        <div className="line"></div>
-
-        <h2>
+    <ChapterLayout
+      chapter="3"
+      title="CAPÍTULO 3"
+      subtitle={
+        <>
           ÀS VEZES,
           <br />
           TUDO RECOMEÇA
           <br />
           SEM QUE A GENTE PERCEBA.
-        </h2>
-
-        <p className="story">
+        </>
+      }
+      story={
+        <>
           A nossa história parecia
           <br />
           ter ficado no passado.
@@ -42,20 +39,19 @@ function Chapter3() {
           que eu escolhi
           <br />
           levar comigo para sempre.
-        </p>
-
-        <div className="footer">
-          <p>
-            Quando encontrar a resposta,
-            <br />
-            escaneie o QR Code.
-          </p>
-
-          <button onClick={() => navigate("/scanner")}>ABRIR LEITOR</button>
-        </div>
-      </div>
-    </div>
+        </>
+      }
+      leftImage="/images/ana3.png"
+      rightImage="/images/larissa3.png"
+      hint={
+        <>
+          Quando encontrar a resposta,
+          <br />
+          escaneie o QR Code.
+        </>
+      }
+      buttonText="ABRIR LEITOR"
+      onButtonClick={() => navigate("/scanner")}
+    />
   );
 }
-
-export default Chapter3;

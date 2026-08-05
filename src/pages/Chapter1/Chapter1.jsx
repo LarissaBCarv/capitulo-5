@@ -1,35 +1,21 @@
-import "./Chapter1.css";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import ChapterLayout from "../../components/ChapterLayout/ChapterLayout";
 
 export default function Chapter1() {
   const navigate = useNavigate();
 
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisible(true);
-    }, 150);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <main className={`chapter1 ${visible ? "show" : ""}`}>
-      <section className="chapter1__content">
-        <span className="chapter1__edition">LIMITED EDITION</span>
-
-        <h1 className="chapter1__title">CAPÍTULO 1</h1>
-
-        <div className="chapter1__line"></div>
-
-        <h2 className="chapter1__subtitle">
+    <ChapterLayout
+      chapter="1"
+      title="CAPÍTULO 1"
+      subtitle={
+        <>
           UM NOVO LUGAR
           <br />E UMA HISTÓRIA QUE AINDA NEM EXISTIA.
-        </h2>
-
-        <p className="chapter1__story">
+        </>
+      }
+      story={
+        <>
           Antes dos abraços.
           <br />
           Antes dos beijos.
@@ -47,21 +33,21 @@ export default function Chapter1() {
           <br />
           <br />
           Encontre onde tudo começou.
-        </p>
-
-        <div className="chapter1__footer">
-          <img src="/images/ana1.png" alt="" className="chapter1__photo" />
-
-          <button
-            className="chapter1__button"
-            onClick={() => navigate("/scanner")}
-          >
-            ABRIR LEITOR
-          </button>
-
-          <img src="/images/larissa1.png" alt="" className="chapter1__photo" />
-        </div>
-      </section>
-    </main>
+        </>
+      }
+      leftImage="/images/ana1.png"
+      rightImage="/images/larissa1.png"
+      hint={
+        <>
+          Quando encontrar
+          <br />
+          a resposta,
+          <br />
+          escaneie o QR Code.
+        </>
+      }
+      buttonText="ABRIR LEITOR"
+      onButtonClick={() => navigate("/scanner")}
+    />
   );
 }
