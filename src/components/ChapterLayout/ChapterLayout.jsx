@@ -10,6 +10,7 @@ export default function ChapterLayout({
   rightImage,
   rightImageClass,
   singleImage,
+  showHintOnly,
   hint,
   buttonText,
   onButtonClick,
@@ -37,13 +38,17 @@ export default function ChapterLayout({
 
         <p className="chapter__story">{story}</p>
 
-        {singleImage ? (
-          <div className="chapter__single-image">
+        {showHintOnly ? (
+          <p className="chapter__hint chapter__hint-final">{hint}</p>
+        ) : singleImage ? (
+          <div className="chapter__single-clue">
             <img
               src={singleImage}
               alt=""
               className={`chapter__photo ${rightImageClass || ""}`}
             />
+
+            <p className="chapter__hint">{hint}</p>
           </div>
         ) : (
           <div className="chapter__clue">
@@ -59,11 +64,11 @@ export default function ChapterLayout({
           </div>
         )}
 
-        {singleImage && <p className="chapter__hint">{hint}</p>}
-
-        <button className="chapter__button" onClick={onButtonClick}>
-          {buttonText}
-        </button>
+        {buttonText && (
+          <button className="chapter__button" onClick={onButtonClick}>
+            {buttonText}
+          </button>
+        )}
       </section>
     </main>
   );

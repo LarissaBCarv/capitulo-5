@@ -8,7 +8,8 @@ export default function Final() {
     <ChapterLayout
       chapter="∞"
       title="EPÍLOGO"
-      singleImage
+      singleImage="/images/nos.png"
+      rightImageClass="final-image"
       subtitle={
         <>
           ANTES DO PRÓXIMO
@@ -39,7 +40,6 @@ export default function Final() {
           Olhe para ela onde seguimos viagem.
         </>
       }
-      singleImage="/images/nos.png"
       hint={
         <>
           Quando encontrar a resposta,

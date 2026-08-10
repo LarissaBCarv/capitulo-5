@@ -33,12 +33,13 @@ export default function Chapter5() {
           <br />
           o mesmo pedido.
           <br />
-          E esse capítulo ainda não acabou.
+          Naquele dia, eu te entreguei uma pergunta
+          <br />
+          e você me entregou um futuro.
           <br />
           <br />
-          A próxima resposta está exatamente
-          <br />
-          onde tudo mudou.
+          Hoje, eu te entrego o <br />
+          próximo passo dessa história.
         </>
       }
       leftImage="/images/ana5.png"

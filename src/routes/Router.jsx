@@ -12,6 +12,7 @@ import Chapter4 from "../pages/Chapter4/Chapter4";
 import Chapter5 from "../pages/Chapter5/Chapter5";
 import Final from "../pages/Final/Final";
 import Presente from "../pages/Presente/Presente";
+import FelizAniversario from "../pages/FelizAniversario/FelizAniversario";
 
 function Router() {
   return (
@@ -34,6 +35,7 @@ function Router() {
 
         <Route path="/scanner" element={<Scanner />} />
         <Route path="/qrcodes" element={<QRCodes />} />
+        <Route path="/feliz-aniversario" element={<FelizAniversario />} />
       </Routes>
     </BrowserRouter>
   );

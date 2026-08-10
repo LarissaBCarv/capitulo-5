@@ -1,18 +1,22 @@
-import "./Presente.css";
+import { useNavigate } from "react-router-dom";
+import ChapterLayout from "../../components/ChapterLayout/ChapterLayout";
 
-function Presente() {
+export default function Presente() {
+  const navigate = useNavigate();
+
   return (
-    <main className="final">
-      <div className="final__content">
-        <span className="final__edition">LIMITED EDITION</span>
-
-        <h1>Último Capítulo</h1>
-
-        <div className="line"></div>
-
-        <p>VOCÊ CHEGOU ATÉ O FIM.</p>
-
-        <p>
+    <ChapterLayout
+      chapter="∞"
+      title="A SURPRESA"
+      subtitle={
+        <>
+          VOCÊ CHEGOU
+          <br />
+          ATÉ AQUI.
+        </>
+      }
+      story={
+        <>
           Você encontrou cada pista.
           <br />
           Reviveu cada lembrança.
@@ -21,28 +25,29 @@ function Presente() {
           <br />
           reviveu a nossa história.
           <br />
-          <br />
           Agora chegou a hora
           <br />
           de descobrir
           <br />a última surpresa.
-        </p>
-
-        <div className="final__message">
+        </>
+      }
+      showHintOnly
+      hint={
+        <>
           O PRESENTE ESTÁ
           <br />
           NA MALA,
           <br />
           NO PORTA-MALAS.
           <br />
+          A SENHA É:
           <br />
-          SENHA DO CADEADO
+          <span className="password">705</span>
           <br />
-          <span className="password">0508</span>
-        </div>
-      </div>
-    </main>
+        </>
+      }
+      buttonText="ABRIR A ÚLTIMA PÁGINA"
+      onButtonClick={() => navigate("/feliz-aniversario")}
+    />
   );
 }
-
-export default Presente;
