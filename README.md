@@ -1,16 +1,82 @@
-# React + Vite
+# 💙 CAPÍTULO 5
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Uma história que continua sendo escrita.
 
-Currently, two official plugins are available:
+**Capítulo 5** é uma experiência web interativa criada como um presente personalizado, transformando uma história de cinco anos em uma pequena jornada através de capítulos, memórias e QR Codes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A aplicação foi desenvolvida em React e pensada para ser utilizada principalmente em dispositivos móveis.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Sobre o projeto
 
-## Expanding the ESLint configuration
+O projeto transforma momentos importantes de uma história em uma experiência interativa.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cada capítulo representa uma etapa diferente e leva a uma nova descoberta através de QR Codes espalhados fisicamente durante a experiência.
+
+A proposta foi unir:
+
+- Desenvolvimento Front-end
+- UI/UX
+- Narrativa interativa
+- QR Codes
+- Responsividade
+- Animações
+- Experiência mobile
+
+O resultado é uma espécie de **caça ao tesouro digital**, em que o usuário precisa descobrir cada pista para continuar avançando.
+
+---
+
+## 🎮 Como funciona
+
+A experiência é dividida em capítulos.
+
+O usuário:
+
+1. Inicia a experiência;
+2. Descobre uma pista;
+3. Encontra um QR Code;
+4. Utiliza o scanner integrado à aplicação;
+5. É direcionado para o próximo capítulo;
+6. Continua a jornada até chegar à surpresa final.
+
+Os QR Codes funcionam como pontos de transição entre as diferentes partes da história.
+
+---
+
+## 🧩 Estrutura da experiência
+
+```text
+Início
+  ↓
+Capítulo 1
+  ↓
+QR Code
+  ↓
+Capítulo 2
+  ↓
+QR Code
+  ↓
+Capítulo 3
+  ↓
+QR Code
+  ↓
+Capítulo 4
+  ↓
+QR Code
+  ↓
+Capítulo 5
+  ↓
+QR Code
+  ↓
+Epílogo
+  ↓
+QR Code
+  ↓
+A Surpresa
+  ↓
+Presente
+  ↓
+Feliz Aniversário
+```
