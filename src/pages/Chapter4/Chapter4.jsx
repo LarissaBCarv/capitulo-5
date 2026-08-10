@@ -34,9 +34,14 @@ export default function Chapter4() {
           <br />
           NAQUELA ÉPOCA,
           <br />
-          EXISTIA UMA COISA QUE NUNCA SAÍA
+          EXISTIA UMA COISA QUE NOS LEMBRAVA
           <br />
-          DAS NOSSAS MÃOS.
+          QUE O MUNDO LÁ FORA TINHA MUDADO.
+          <br />
+          <br />
+          HOJE,
+          <br />
+          ELA ESCONDE A PRÓXIMA PISTA.
         </>
       }
       leftImage="/images/ana4.png"
