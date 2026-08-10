@@ -15,44 +15,40 @@ export default function FelizAniversario() {
   return (
     <main className={`chapter ${visible ? "show" : ""}`}>
       <section className="chapter__content">
-        {/* INTRO */}
         <div className="chapter__edition">LIMITED EDITION</div>
 
-        {/* TÍTULO */}
         <h1 className="chapter__title">FELIZ ANIVERSÁRIO</h1>
 
         <div className="chapter__line"></div>
 
-        {/* TEXTO */}
         <p className="chapter__story">
-          O presente foi pensado na nossa história.
+          O PRESENTE FOI PENSADO NA NOSSA HISTÓRIA.
           <br />
-          Mas hoje...
+          MAS HOJE...
           <br />
-          Quem merece ser celebrada é você.
+          QUEM MERECE SER CELEBRADA É VOCÊ.
           <br />
-          Feliz aniversário, meu amor.
-          <br />
-          <br />
-          Que os seus 30 anos sejam repletos de saúde, paz, conquistas e de tudo
-          aquilo que te faz feliz.
+          FELIZ ANIVERSÁRIO, MEU AMOR.
           <br />
           <br />
-          Eu espero poder estar ao seu lado em cada um desses momentos,
-          compartilhando a vida, as viagens, as vitórias, os dias comuns e todos
-          os capítulos que ainda vamos escrever.
+          QUE OS SEUS 30 ANOS SEJAM REPLETOS DE SAÚDE, PAZ, CONQUISTAS E DE TUDO
+          AQUILO QUE TE FAZ FELIZ.
           <br />
           <br />
-          Porque essa história nunca foi sobre chegar ao fim. Ela sempre foi
-          sobre continuar escolhendo você.
+          EU ESPERO PODER ESTAR AO SEU LADO EM CADA UM DESSES MOMENTOS,
+          COMPARTILHANDO A VIDA, AS VIAGENS, AS VITÓRIAS, OS DIAS COMUNS E TODOS
+          OS CAPÍTULOS QUE AINDA VAMOS ESCREVER.
           <br />
           <br />
-          Eu te amo. Bem-vinda aos 30.
+          PORQUE ESSA HISTÓRIA NUNCA FOI SOBRE CHEGAR AO FIM. ELA SEMPRE FOI
+          SOBRE CONTINUAR ESCOLHENDO VOCÊ.
           <br />
-          Você vai odiar.
+          <br />
+          EU TE AMO. BEM-VINDA AOS 30.
+          <br />
+          VOCÊ VAI ODIAR.
         </p>
 
-        {/* ASSINATURA */}
         <div className="final__signature">
           <p>DA SUA ETERNA</p>
           <span>NISSA DA ESCOLA</span>

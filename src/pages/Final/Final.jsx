@@ -19,25 +19,25 @@ export default function Final() {
       }
       story={
         <>
-          Existe uma mulher
+          EXISTE UMA MULHER
           <br />
-          que mudou completamente a minha vida.
+          QUE MUDOU COMPLETAMENTE A MINHA VIDA.
           <br />
-          Uma mulher que eu escolho amar
+          UMA MULHER QUE EU ESCOLHO AMAR
           <br />
-          todos os dias.
-          <br />
-          <br />
-          E toda vez que ela olhar
-          <br />
-          para um espelho, eu espero
-          <br />
-          que consiga enxergar
-          <br />
-          pelo menos um pouco do que eu enxergo nela.
+          TODOS OS DIAS.
           <br />
           <br />
-          Olhe para ela onde seguimos viagem.
+          E TODA VEZ QUE ELA OLHAR
+          <br />
+          PARA UM ESPELHO, EU ESPERO
+          <br />
+          QUE CONSIGA ENXERGAR
+          <br />
+          PELO MENOS UM POUCO DO QUE EU ENXERGO NELA.
+          <br />
+          <br />
+          OLHE PARA ELA ONDE SEGUIMOS VIAGEM.
         </>
       }
       hint={

@@ -16,34 +16,32 @@ export default function Chapter1() {
       }
       story={
         <>
-          Antes dos abraços.
+          ANTES DOS ABRAÇOS.
           <br />
-          Antes dos beijos.
+          ANTES DOS BEIJOS.
           <br />
-          Antes de nós.
-          <br />
-          <br />
-          Existia apenas um lugar...
-          <br />
-          e duas pessoas que ainda
-          <br />
-          não imaginavam o que
-          <br />
-          o futuro estava preparando.
+          ANTES DE NÓS.
           <br />
           <br />
-          Encontre onde tudo começou.
+          EXISTIA APENAS UM LUGAR...
+          <br />
+          E DUAS PESSOAS QUE AINDA
+          <br />
+          NÃO IMAGINAVAM O QUE
+          <br />
+          O FUTURO ESTAVA PREPARANDO.
+          <br />
+          <br />
+          ENCONTRE ONDE TUDO COMEÇOU.
         </>
       }
       leftImage="/images/ana1.png"
       rightImage="/images/larissa1.png"
       hint={
         <>
-          Quando encontrar
+          Quando encontrar a resposta,
           <br />
-          a resposta,
-          <br />
-          escaneie o QR Code.
+          escaneie o qr code.
         </>
       }
       buttonText="ABRIR LEITOR"

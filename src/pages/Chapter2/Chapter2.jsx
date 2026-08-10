@@ -17,19 +17,19 @@ export default function Chapter2() {
       }
       story={
         <>
-          Entre tantas lembranças,
+          ENTRE TANTAS LEMBRANÇAS,
           <br />
-          existe uma que atravessou os anos.
+          EXISTE UMA QUE ATRAVESSOU OS ANOS.
           <br />
-          Ela esteve presente
+          ELA ESTEVE PRESENTE
           <br />
-          quando tudo era apenas o começo.
+          QUANDO TUDO ERA APENAS O COMEÇO.
           <br />
-          E, de alguma forma,
+          E, DE ALGUMA FORMA,
           <br />
-          continua fazendo parte da nossa história.
+          CONTINUA FAZENDO PARTE DA NOSSA HISTÓRIA.
           <br />
-          <br />A próxima resposta veste essa lembrança.
+          <br />A PRÓXIMA RESPOSTA VESTE ESSA LEMBRANÇA.
         </>
       }
       leftImage="/images/ana2.png"
@@ -37,11 +37,9 @@ export default function Chapter2() {
       rightImageClass="bigger-image"
       hint={
         <>
-          Quando encontrar
+          Quando encontrar a resposta,
           <br />
-          a resposta,
-          <br />
-          escaneie o QR Code.
+          escaneie o qr code.
         </>
       }
       buttonText="ABRIR LEITOR"

@@ -17,26 +17,26 @@ export default function Chapter4() {
       }
       story={
         <>
-          O mundo ficou mais quieto.
+          O MUNDO FICOU MAIS QUIETO.
           <br />
-          E, no meio de tudo que mudou,
+          E, NO MEIO DE TUDO QUE MUDOU,
           <br />
-          eu comecei a conhecer você.
+          EU COMECEI A CONHECER VOCÊ.
           <br />
-          Não só a Ana das festas.
+          NÃO SÓ A ANA DAS FESTAS.
           <br />
-          A Ana.
+          A ANA.
           <br />
-          Aquela que eu queria ter por perto,
+          AQUELA QUE EU QUERIA TER POR PERTO,
           <br />
-          mesmo quando não havia mais lugar nenhum para ir.
+          MESMO QUANDO NÃO HAVIA MAIS LUGAR NENHUM PARA IR.
           <br />
           <br />
-          Naquela época,
+          NAQUELA ÉPOCA,
           <br />
-          existia uma coisa que nunca saía
+          EXISTIA UMA COISA QUE NUNCA SAÍA
           <br />
-          das nossas mãos.
+          DAS NOSSAS MÃOS.
         </>
       }
       leftImage="/images/ana4.png"

@@ -19,26 +19,26 @@ export default function Chapter3() {
       }
       story={
         <>
-          A nossa história parecia
+          A NOSSA HISTÓRIA PARECIA
           <br />
-          ter ficado no passado.
+          TER FICADO NO PASSADO.
           <br />
-          Até que, um dia, alguém
+          ATÉ QUE, UM DIA, ALGUÉM
           <br />
-          apareceu em um stories.
+          APARECEU EM UM STORIES.
           <br />
-          E, de repente,
+          E, DE REPENTE,
           <br />
-          nós voltamos a conversar.
+          NÓS VOLTAMOS A CONVERSAR.
           <br />
           <br />
-          A próxima resposta está
+          A PRÓXIMA RESPOSTA ESTÁ
           <br />
-          em uma lembrança
+          EM UMA LEMBRANÇA
           <br />
-          que eu escolhi
+          QUE EU ESCOLHI
           <br />
-          levar comigo para sempre.
+          LEVAR COMIGO PARA SEMPRE.
         </>
       }
       leftImage="/images/ana3.png"

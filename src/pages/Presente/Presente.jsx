@@ -17,18 +17,18 @@ export default function Presente() {
       }
       story={
         <>
-          Você encontrou cada pista.
+          VOCÊ ENCONTROU CADA PISTA.
           <br />
-          Reviveu cada lembrança.
+          REVIVEU CADA LEMBRANÇA.
           <br />
-          E, principalmente,
+          E, PRINCIPALMENTE,
           <br />
-          reviveu a nossa história.
+          REVIVEU A NOSSA HISTÓRIA.
           <br />
-          Agora chegou a hora
+          AGORA CHEGOU A HORA
           <br />
-          de descobrir
-          <br />a última surpresa.
+          DE DESCOBRIR
+          <br />A ÚLTIMA SURPRESA.
         </>
       }
       showHintOnly

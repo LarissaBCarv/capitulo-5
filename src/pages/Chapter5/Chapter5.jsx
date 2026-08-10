@@ -17,29 +17,29 @@ export default function Chapter5() {
       }
       story={
         <>
-          Você encerrou um capítulo.
+          VOCÊ ENCERROU UM CAPÍTULO.
           <br />
-          Eu fiz uma escolha.
+          EU FIZ UMA ESCOLHA.
           <br />
-          E, em algum momento,
+          E, EM ALGUM MOMENTO,
           <br />
-          a gente deixou de ser possibilidade
+          A GENTE DEIXOU DE SER POSSIBILIDADE
           <br />
-          para virar nós.
+          PARA VIRAR NÓS.
           <br />
-          Cinco anos depois,
+          CINCO ANOS DEPOIS,
           <br />
-          eu ainda escolheria fazer
+          EU AINDA ESCOLHERIA FAZER
           <br />
-          o mesmo pedido.
+          O MESMO PEDIDO.
           <br />
-          Naquele dia, eu te entreguei uma pergunta
+          NAQUELE DIA, EU TE ENTREGUEI UMA PERGUNTA
           <br />
-          e você me entregou um futuro.
+          E VOCÊ ME ENTREGOU UM FUTURO.
           <br />
           <br />
-          Hoje, eu te entrego o <br />
-          próximo passo dessa história.
+          HOJE, EU TE ENTREGO O <br />
+          PRÓXIMO PASSO DESSA HISTÓRIA.
         </>
       }
       leftImage="/images/ana5.png"

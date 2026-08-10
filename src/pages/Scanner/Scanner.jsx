@@ -1,5 +1,5 @@
 import "./Scanner.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
 
@@ -7,8 +7,11 @@ function Scanner() {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
 
+  const scannerRef = useRef(null);
+  const navigatingRef = useRef(false);
+
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setVisible(true);
     }, 150);
 
@@ -24,6 +27,8 @@ function Scanner() {
       false,
     );
 
+    scannerRef.current = scanner;
+
     const routes = {
       chapter2: "/chapter2",
       chapter3: "/chapter3",
@@ -34,27 +39,49 @@ function Scanner() {
     };
 
     scanner.render(
-      (decodedText) => {
+      async (decodedText) => {
         const route = routes[decodedText];
 
-        if (route) {
-          scanner.clear().then(() => {
-            navigate(route);
-          });
+        if (!route || navigatingRef.current) {
+          return;
         }
+
+        navigatingRef.current = true;
+
+        try {
+          await scanner.clear();
+        } catch (error) {
+          console.warn("Erro ao limpar o scanner:", error);
+        }
+
+        navigate(route);
       },
       () => {},
     );
 
     return () => {
-      scanner.clear().catch(() => {});
+      clearTimeout(timer);
+
+      if (navigatingRef.current) {
+        scannerRef.current = null;
+        return;
+      }
+
+      if (scannerRef.current) {
+        scannerRef.current
+          .clear()
+          .catch(() => {})
+          .finally(() => {
+            scannerRef.current = null;
+          });
+      }
     };
   }, [navigate]);
 
   return (
     <main className={`scanner ${visible ? "show" : ""}`}>
       <section className="scanner__content">
-        <span className="scanner__edition">LIMITED EDITION</span>
+        <div className="scanner__edition">LIMITED EDITION</div>
 
         <h1 className="scanner__title">LEITOR</h1>
 
